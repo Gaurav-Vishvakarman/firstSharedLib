@@ -25,14 +25,14 @@ def call(String buildStatus = 'STARTED') {
   }
 
   // Send notifications
-  slackSend (color: colorCode, message: summary)
+  //slackSend (color: colorCode, message: summary)
 
-  hipchatSend (color: color, notify: true, message: summary)
+  //hipchatSend (color: color, notify: true, message: summary)
 
-  emailext (
-      to: 'gaurav.kumar20@globallogic.com',
-      subject: subject,
-      body: details,
-      recipientProviders: [[$class: 'DevelopersRecipientProvider']]
-    )
+  //emailext (
+  //    to: 'gaurav.kumar20@globallogic.com',
+  //    subject: subject,
+  //    body: details,
+  //    recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+  //  )
 }
