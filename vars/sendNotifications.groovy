@@ -24,6 +24,8 @@ def call(String buildStatus = 'STARTED') {
     colorCode = '#00FF00'
   }
 
+  echo "Inside sendNotifications.groovy script"
+  
   // Send notifications
   //slackSend (color: colorCode, message: summary)
 
